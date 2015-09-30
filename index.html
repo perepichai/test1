@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <script src="js/jquery.js" ></script>
+    <script src="js/bootstrap.min.js" ></script>
+    <script src="js/custom.js" ></script>
+</head>
+<body>
+    <ul>
+        <li class="item"><a class="button button-border button-rounded" href="#">Рабочая панель</a></li>
+        <li class="item"><a class="button button-border button-rounded" href="index.html">Товары</a></li>
+        <li class="item"><a class="button button-border button-rounded" href="#">Бюджет</a></li>
+        <li class="item"><a class="button button-border button-rounded" href="#">Отчеты</a></li>
+        <li class="item"><a class="button button-border button-rounded" href="#">Общее</a></li>
+        <li class="item"><a class="button button-border button-rounded" href="#">Управление</a></li>
+    </ul>
+<div class="divider">
+</div>
+<table class="table-main" cellspacing='0'>
+    <caption>Списание товаров</caption>
+    <tr>
+        <th>Код товара</th>
+        <th>Название</th>
+        <th>Количество</th>
+        <th>Цена</th>
+        <th>Списать</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td class="td-button"><span data-toggle="modal" data-target=".armchair">Кресло</span></td>
+        <td>34</td>
+        <td>20$</td>
+        <td><span class="glyphicon glyphicon-ok-circle btn-table" aria-hidden="true" data-toggle="modal" data-target="#exampleModal" data-whatever="Кресло"></span></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="td-button"><span data-toggle="modal" data-target=".lamp">Лампа</span></td>
+        <td>28</td>
+        <td>15$</td>
+        <td><span class="glyphicon glyphicon-ok-circle btn-table" aria-hidden="true" data-toggle="modal" data-target="#exampleModal" data-whatever="Лампа"></span></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="td-button"><span data-toggle="modal" data-target=".sofa">Диван</span></td>
+        <td>10</td>
+        <td>200$</td>
+        <td><span class="glyphicon glyphicon-ok-circle btn-table" aria-hidden="true" data-toggle="modal" data-target="#exampleModal" data-whatever="Диван"></span></td>
+    </tr>
+</table>
+
+    <!-- About. Modals -->
+    <div class="modal armchair">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Кресло</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad earum est molestiae obcaecati repellat saepe, voluptate! Adipisci consequuntur delectus dolorem fugiat ipsam, iusto, minus porro quia, quod quos voluptates. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal lamp">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Лампа</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad earum est molestiae obcaecati repellat saepe, voluptate! Adipisci consequuntur delectus dolorem fugiat ipsam, iusto, minus porro quia, quod quos voluptates. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal sofa">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Диван</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad earum est molestiae obcaecati repellat saepe, voluptate! Adipisci consequuntur delectus dolorem fugiat ipsam, iusto, minus porro quia, quod quos voluptates. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About. Modals -->
+
+    <!-- Count. Modals -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="exampleModalLabel">Списание товара</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient" class="control-label">Количество:</label>
+                            <input type="number" class="form-control" id="recipient">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                    <button id="writeoff" type="button" class="btn btn-primary" data-dismiss="modal">Списать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Count. Modals -->
+</body>
+</html>
